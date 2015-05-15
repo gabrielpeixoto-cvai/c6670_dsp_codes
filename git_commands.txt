@@ -1,0 +1,5 @@
+git status
+git add arquivos modificados
+git pull
+git commit -m "mensagem"
+git push origin master
