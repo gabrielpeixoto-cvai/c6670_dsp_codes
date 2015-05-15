@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_dct_multicore.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-z52
+package/xconfig_dct_multicore.java
+package/xconfig_dct_multicore.class
+package/package_xconfig_dct_multicore.c
+package/package.defs.h
+package/xconfig_dct_multicore.ccs

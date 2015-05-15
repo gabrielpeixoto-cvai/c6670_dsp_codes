@@ -1,0 +1,1 @@
+"./main_core_multitask.obj" -l"./configPkg/linker.cmd" -l"libc.a" 
