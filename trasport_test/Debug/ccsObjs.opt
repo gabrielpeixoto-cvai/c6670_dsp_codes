@@ -1,0 +1,1 @@
+"./cppi_device.obj" "./main_qmss.obj" "./multicore_osal.obj" "./qmss_device.obj" "../transport_linker.cmd" -l"./configPkg/linker.cmd" -l"libc.a" 

@@ -1,0 +1,1 @@
+"./infrastructure_multicoremode.obj" "./infrastructure_multicoreosal.obj" "../infrastructure_multicoremode.cmd" -l"./configPkg/linker.cmd" -l"libc.a" 

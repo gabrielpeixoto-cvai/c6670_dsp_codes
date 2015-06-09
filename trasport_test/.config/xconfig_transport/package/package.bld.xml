@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_transport" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/transport_pe66.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="/home/gaburiero/workspace_dsp/trasport_test/transport.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/transport_pe66.mak" src="package.bld"/>
+        <srcFile name="package/cfg/transport_pe66.oe66.dep" src="package/cfg/transport_pe66.c"/>
+        <srcFile name="package/cfg/transport_pe66.dep" src="package/cfg/transport_pe66.cfg"/>
+        <srcFile name="package/cfg/transport.xe66.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_transport.tar.dep" src="package/rel/xconfig_transport.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.elf.C66"
+            version="ti.targets.elf.C66{1,0,8.0,1"
+            rawVersion="8.0.1"
+            platform="ti.platforms.simTCI6616"
+            isa="66"
+            suffix="e66"
+            rootDir="/home/gaburiero/ti/ti-cgt-c6000_8.0.1"
+            os="undefined"
+            rts="ti.targets.rts6000">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="transport"
+        pname="transport.pe66"
+        target="ti.targets.elf.C66"
+        platform="ti.platforms.evm6670"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/transport_pe66.cfg"
+        xCfgPrefix="package/cfg/transport_pe66"
+        cfgScript="/home/gaburiero/workspace_dsp/trasport_test/transport.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="transport"
+        pname="transport.xe66"
+        target="ti.targets.elf.C66"
+        platform="ti.platforms.evm6670"
+        profile="release"
+        xCfgScript="package/cfg/transport_pe66.cfg"
+        xCfgPrefix="package/cfg/transport_pe66"
+        cfgScript="/home/gaburiero/workspace_dsp/trasport_test/transport.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="transport.xe66"
+        args=""
+        groupName="transport.xe66"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_transport"
+        pname="xconfig_transport.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
